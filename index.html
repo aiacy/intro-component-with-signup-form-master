@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      
+    }
+
+    @media only screen and (max-width: 375px){
+      main{
+        display: grid;
+        background-color: hsl(0, 100%, 74%);
+        background-image: url('./images/bg-intro-mobile.png');
+        height: 100%;
+        width: auto;
+        color: white;
+
+        place-items: center;
+      }
+
+      h1{
+        font-size: 1.5rem;
+        padding: 5rem 5rem 0rem;
+      }
+
+      p{
+        text-align: center;
+        padding: 1rem;
+      }
+
+      main.container button{
+        background-color: hsl(248, 32%, 49%);
+        border: none;
+        padding: 1rem;
+        color: white;
+        margin: 1rem;
+        border-radius: .5rem;
+        display: grid;
+        place-items: center;
+        margin-top: 3rem;
+      }
+
+      main.container button p{
+        width: 60%;
+      }
+
+      form{
+        background-color: white;
+        margin: 1rem;
+        display: grid;
+        padding: 1.5rem;
+        gap: 1rem;
+        border-color: hsl(249, 10%, 26%);
+        border-radius: .5rem;
+      }
+      input{
+        padding: .5rem;
+        color: hsl(249, 10%, 26%);
+        opacity: 60%;
+        font-weight: 500;
+      }
+
+      button.claim{
+        margin: 0px !important;
+        background-color: hsl(154, 59%, 51%) !important;
+        text-transform: uppercase;
+      }
+
+      form p{
+          color: hsl(246, 25%, 77%);
+          font-size: .7rem;
+          
+      }
+
+      form a{
+        font-size: .7rem;
+        text-decoration: none;
+        color: hsl(0, 100%, 74%);
+      }
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { font-size: 11px; color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+
+      <button><p><b>Try it free 7 days</b> then $20/mo. thereafter</p></button>
+      <form action="submit">
+        <input type="text" value="First Name">
+        <input type="text" value="Last Name">
+        <input type="email" value="Email Address">
+        <input type="text" value="Password">
+        <button class="claim">Claim your free trial </button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      
+      </form>
+
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Aliyah Regina</a>.
+        </p>
+      </footer>
+  </main>
+
+
+
+  
+
+</body>
+</html>
